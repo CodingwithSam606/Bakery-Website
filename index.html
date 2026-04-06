@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tusam Bakery | Fresh Cakes & Pastries</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER + HERO ================= -->
+
+    <div id="home" class="head-hero">
+
+        <!-- Slider -->
+        <div class="slider">
+            <img src="images/american-heritage-chocolate-vdx5hPQhXFk-unsplash.jpg" class="slide active">
+            <img src="images/image2.jpg" class="slide">
+            <img src="images/image6.jpg" class="slide">
+        </div>
+
+        <button class="slider-btn prev">&#10094;</button>
+        <button class="slider-btn next">&#10095;</button>
+        <div class="dots"></div>
+
+        <!-- Navigation -->
+        <header>
+            <div class="nav-bar">
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#specials">Special Orders</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-left">
+                <span class="hero-intro fade-child">Welcome to</span>
+                <h1 class="fade-child">Tusam Bakery</h1>
+                <p class="fade-child">Freshly baked goodness made with love every single day.</p>
+                <a href="#products" class="btn fade-child">Explore Our Menu</a>
+            </div>
+            <div class="custom-shape-divider">
+                <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+                    <path
+                        d="M0,96L60,101.3C120,107,240,117,360,112C480,107,600,85,720,85.3C840,85,960,107,1080,117.3C1200,128,1320,128,1380,128L1440,128L1440,150L0,150Z">
+                    </path>
+                </svg>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <h2 class="fade-child">About Tusam Bakery</h2>
+            <p class="fade-child">
+                Since 2011, Tusam Bakery has been serving the community with freshly baked cakes, pastries,
+                and specialty treats made from premium ingredients and traditional techniques.
+            </p>
+            <p class="fade-child">
+                Founded by the Tusam family, our mission is simple:
+                to create baked goods that bring joy to every celebration and everyday moment.
+            </p>
+            <p class="fade-child">
+                Learn more about our journey and vision from
+                <a href="ceo-bio.html">our CEO</a>.
+            </p>
+        </div>
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section id="products" class="products">
+
+        <div class="product-container">
+
+            <h2 class="section-title">Our Signature Cakes</h2>
+            <p class="section-subtitle">Perfect for birthdays, weddings & celebrations</p>
+
+            <!-- CATEGORY FILTER -->
+            <div class="product-filters">
+                <button class="filter active" data-filter="all">All</button>
+                <button class="filter" data-filter="birthday">Birthday</button>
+                <button class="filter" data-filter="wedding">Wedding</button>
+                <button class="filter" data-filter="chocolate">Chocolate</button>
+                <button class="filter" data-filter="fruit">Fruit</button>
+            </div>
+
+
+            <!-- FEATURED CAKE -->
+            <div class="featured-cake">
+
+                <img src="images/image7.jpg" alt="Strawberry Shortcake">
+
+                <div class="featured-info">
+                    <span class="badge">Chef's Special</span>
+                    <h3>Strawberry Shortcake</h3>
+                    <p>A fluffy vanilla sponge layered with fresh cream and strawberries.</p>
+
+                    <div class="featured-bottom">
+                        <span class="price">₦14,000</span>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- CAKE GRID -->
+            <div class="cake-grid">
+
+                <div class="cake-card" data-category="birthday"
+                    data-desc="Soft vanilla sponge layered with smooth whipped cream and lightly sweetened frosting.">
+
+                    <div class="cake-img">
+                        <img src="images/image1.jpg">
+                    </div>
+
+                    <div class="cake-info">
+                        <h4>Vanilla Cream Cake</h4>
+                        <p class="price">₦30,500</p>
+                        <button class="order-btn">Order</button>
+                    </div>
+                </div>
+
+
+                <div class="cake-card" data-category="chocolate"
+                    data-desc="Rich chocolate layers filled with decadent chocolate ganache and topped with chocolate shavings.">
+
+                    <div class="cake-img">
+                        <img src="images/image2.jpg">
+                    </div>
+
+                    <div class="cake-info">
+                        <h4>Chocolate Layer Cake</h4>
+                        <p class="price">₦12,000</p>
+                        <button class="order-btn">Order</button>
+                    </div>
+                </div>
+
+
+                <div class="cake-card" data-category="fruit"
+                    data-desc="Classic red velvet cake finished with smooth cream cheese frosting.">
+
+                    <div class="cake-img">
+                        <img src="images/image 3.jpg">
+                    </div>
+
+                    <div class="cake-info">
+                        <h4>Red Velvet Cake</h4>
+                        <p class="price">₦15,000</p>
+                        <button class="order-btn">Order</button>
+                    </div>
+                </div>
+
+                <div class="cake-card" data-category="birthday"
+                    data-desc="Moist chocolate cake topped with glossy chocolate drip and creamy frosting.">
+                    <div class="cake-img">
+                        <img src="images/stephen-wheeler-LRIQuZyxKRM-unsplash.jpg">
+                    </div>
+
+                    <div class="cake-info">
+                        <h4>Chocolate Drip Birthday Cake</h4>
+                        <p class="price">₦25,000</p>
+                        <button class="order-btn">Order</button>
+                    </div>
+                </div>
+
+                <div class="cake-card" data-category="fruit"
+                    data-desc="Light and airy sponge cake layered with fresh berries and whipped cream, topped with a medley of fruits.">
+                    <div class="cake-img">
+                        <img src="images/image5.jpg">
+                    </div>
+
+                    <div class="cake-info">
+                        <h4>Berry frosted Cake</h4>
+                        <p class="price">₦18,000</p>
+                        <button class="order-btn">Order</button>
+                    </div>
+                </div>
+
+                <div class="cake-card" data-category="wedding"
+                    data-desc="Elegant multi-tiered wedding cake with intricate fondant details and delicate floral accents.">
+                    <div class="cake-img">
+                        <img src="images/pexels-leticiacurveloph-28954461.jpg">
+                    </div>
+
+                    <div class="cake-info">
+                        <h4>Classic Wedding Cake</h4>
+                        <p class="price">₦60,000</p>
+                        <button class="order-btn">Order</button>
+                    </div>
+                </div>
+
+                <div class="cake-card" data-category="wedding"
+                    data-desc="Sophisticated wedding cake with smooth fondant finish, adorned with elegant sugar flowers and delicate piping work.">
+                    <div class="cake-img">
+                        <img src="images/thomas-william-U7N6XFvTBjU-unsplash.jpg">
+                    </div>
+
+                    <div class="cake-info">
+                        <h4>Elegant Wedding Cake</h4>
+                        <p class="price">₦75,000</p>
+                        <button class="order-btn">Order</button>
+                    </div>
+                </div>
+
+                <div class="cake-card" data-category="chocolate"
+                    data-desc="Decadent chocolate cake layered with rich chocolate fudge and topped with chocolate ganache and shavings.">
+                    <div class="cake-img">
+                        <img src="images/black_forest_gateau_43895_16x9.jpg">
+                    </div>
+
+                    <div class="cake-info">
+                        <h4>Chocolate Fudge Cake</h4>
+                        <p class="price">₦20,000</p>
+                        <button class="order-btn">Order</button>
+                    </div>
+                </div>
+
+                <div class="cake-card" data-category="wedding"
+                    data-desc="Luxurious wedding cake with smooth fondant finish, adorned with elegant sugar flowers and delicate piping work.">
+                    <div class="cake-img">
+                        <img src="images/pexels-tara-winstead-7666514.jpg">
+                    </div>
+
+                    <div class="cake-info">
+                        <h4>Marble Wedding Cake</h4>
+                        <p class="price">₦150,000</p>
+                        <button class="order-btn">Order</button>
+                    </div>
+                </div>
+
+                <div class="cake-card" data-category="birthday"
+                    data-desc="Fun and festive birthday cake with colorful sprinkles, a playful design, and a delicious vanilla flavor.">
+                    <div class="cake-img">
+                        <img src="images/pexels-jonathanborba-5610322.jpg">
+                    </div>
+
+                    <div class="cake-info">
+                        <h4>Happy Birthday Cake for a 12-year-old</h4>
+                        <p class="price">₦22,000</p>
+                        <button class="order-btn">Order</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= SPECIAL ORDERS ================= -->
+
+    <section id="specials" class="fade-in">
+        <div class="product-container">
+
+            <h2 class="section-title2">Custom & Special Orders</h2>
+            <p class="section-subtitle2">Designed to match your unique celebration</p>
+
+            <div class="custom-order">
+                <h3>Need a Custom Cake?</h3>
+                <p>
+                    Whether it's a wedding, birthday, corporate event,
+                    or surprise celebration — we create personalized cakes
+                    tailored exactly to your vision.
+                </p>
+                <a href="#contact" class="btn">Request a Custom Order</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact fade-in">
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you! Reach out to place an order or ask a question.</p>
+
+        <ul>
+            <li>Email: <a href="mailto:info@tusambakery.com">info@tusambakery.com</a></li>
+            <li>Phone: +234 803 123 4567</li>
+            <li>Location: Lagos, Nigeria</li>
+        </ul>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+        <p>Follow Us</p>
+        <ul class="social-media">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+        <p>&copy; 2026 Tusam Bakery. All rights reserved.</p>
+    </footer>
+
+    <!-- PRODUCT MODAL -->
+    <div id="cake-modal" class="modal">
+        <div class="modal-content">
+
+            <span class="close-modal">&times;</span>
+
+            <img id="modal-img" src="" alt="Cake Image">
+
+            <div class="modal-text">
+                <h3 id="modal-title"></h3>
+                <p id="modal-desc"></p>
+                <p id="modal-price"></p>
+                <button class="order-btn">Order Now</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
