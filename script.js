@@ -233,3 +233,33 @@ window.addEventListener("click", (e) => {
         modal.style.display = "none";
     }
 });
+
+// =========================================
+// PREMIUM MOBILE MENU TOGGLE
+// =========================================
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    const navLinks = document.querySelectorAll('.nav-menu a');
+
+    if (menuToggle && navMenu) {
+        // Open/Close menu when clicking the hamburger
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navMenu.classList.toggle('open');
+            // Prevent body from scrolling when menu is open
+            document.body.style.overflow = navMenu.classList.contains('open') ? 'hidden' : '';
+        });
+
+        // Close menu automatically when a link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navMenu.classList.remove('open');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        });
+    }
+
+    // ... (Leave the rest of your existing JS below this)
+});
